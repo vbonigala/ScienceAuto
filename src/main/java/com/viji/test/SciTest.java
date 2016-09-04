@@ -16,6 +16,7 @@ public class SciTest {
 		wd.findElement(By.id("lst-ib")).clear();
 		wd.findElement(By.id("lst-ib")).sendKeys("science");
 		wd.findElement(By.name("btnG")).click();
+		
 		wd.findElement(By.linkText("Science - Wikipedia, the free encyclopedia")).click();
 		if (!wd.findElement(By.id("firstHeading")).getText().equals("Science")) {
 			System.out.println("verifyText failed");
