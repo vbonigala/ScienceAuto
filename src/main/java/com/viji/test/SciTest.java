@@ -23,6 +23,12 @@ public class SciTest {
 			System.out.println("verifyText passed");
 			
 		}
+		if (!wd.findElement(By.id("History")).getText().equals("History")) {
+			System.out.println("verifyText for History failed");
+		} else {
+			System.out.println("verifyText for History passed");
+			
+		}
 		wd.quit();
 	}
 
